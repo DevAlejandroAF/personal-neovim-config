@@ -17,10 +17,10 @@ return {
           hide_gitignored = true,
           hide_by_name = {
             "node_modules",
-            ".git",
           },
           never_show = {
             ".DS_Store",
+            ".git",
           },
         },
       }
