@@ -39,9 +39,6 @@ return {
       lspconfig.jsonls.setup({
         capabilities = capabilities
       })
-      lspconfig.prettier.setup({
-        capabilities = capabilities
-      })
       lspconfig.pyright.setup({
         capabilities = capabilities
       })
