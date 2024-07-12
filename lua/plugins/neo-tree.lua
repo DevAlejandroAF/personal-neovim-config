@@ -8,6 +8,7 @@ return {
 	},
 	config = function()
 		vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", {})
+		vim.keymap.set("n", "<leader>b", ":Neotree buffers toggle<CR>", {})
     require("neo-tree").setup({
       filesystem = {
         filtered_items = {
