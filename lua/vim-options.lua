@@ -9,6 +9,12 @@ vim.opt.swapfile = false
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.wo.relativenumber = true
 vim.opt.cursorline = true
+vim.cmd[[
+augroup highlight_yank
+autocmd!
+au TextYankPost * silent! lua vim.highlight.on_yank({higroup="Visual", timeout=200})
+augroup END
+]]
 
 -- Navigate vim panes better
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
