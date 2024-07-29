@@ -19,7 +19,15 @@ return {
         statusline = 1000,
         tabline = 1000,
         winbar = 1000,
-      }
+      },
+      {
+        function()
+          return require("noice").api.status.lsp_progress.get_hl()
+        end,
+        cond = function()
+          return package.loaded["noice"] and require("noice").api.status.lsp_progress.has()
+        end,
+      },
     },
     sections = {
       lualine_a = {'mode'},
