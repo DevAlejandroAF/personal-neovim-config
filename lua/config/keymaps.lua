@@ -22,3 +22,6 @@ map("n", "<C-h>", "<Cmd>NvimTmuxNavigateLeft<CR>", {})
 map("n", "<C-j>", "<Cmd>NvimTmuxNavigateDown<CR>", {})
 map("n", "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>", {})
 map("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", {})
+
+-- Buffer_manager
+map("n", "<leader>b<tab>", '<Cmd>lua require("buffer_manager.ui").toggle_quick_menu()<CR>')
