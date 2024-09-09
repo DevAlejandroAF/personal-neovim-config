@@ -18,10 +18,10 @@ map("n", "<leader>-", "<cmd>Oil<cr>", { desc = "Oil" })
 map("n", "<leader>m", "<cmd>Mason<cr>", { desc = "Mason" })
 
 -- TmuxNavigation
-map("n", "<C-h>", "<Cmd>NvimTmuxNavigateLeft<CR>", {})
-map("n", "<C-j>", "<Cmd>NvimTmuxNavigateDown<CR>", {})
-map("n", "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>", {})
-map("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", {})
+map("n", "<C-h>", "<Cmd>NvimTmuxNavigateLeft<CR>", { desc = "Nvim Tmux Navigate Left" })
+map("n", "<C-j>", "<Cmd>NvimTmuxNavigateDown<CR>", { desc = "Nvim Tmux Navigate Down" })
+map("n", "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>", { desc = "Nvim Tmux Navigate Up" })
+map("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", { desc = "Nvim Tmux Navigate Right" })
 
 -- Buffer_manager
-map("n", "<leader>b<tab>", '<Cmd>lua require("buffer_manager.ui").toggle_quick_menu()<CR>')
+map("n", "<leader>ba", '<Cmd>lua require("buffer_manager.ui").toggle_quick_menu()<CR>', { desc = "Buffers manager" })
