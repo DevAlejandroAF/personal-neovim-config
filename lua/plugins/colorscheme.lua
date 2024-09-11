@@ -5,7 +5,7 @@ return {
     name = "catppuccin",
     priority = 1000,
     config = function()
-      -- vim.cmd.colorscheme("catppuccin-mocha")
+      vim.cmd.colorscheme("catppuccin-mocha")
     end,
   },
   {
@@ -40,7 +40,7 @@ return {
         terminal = true, -- Set to `false` to let terminal manage its own colors.
         overrides = {}, -- A dictionary of group names, each associated with a dictionary of parameters (`bg`, `fg`, `sp` and `style`) and colors in hex.
       })
-      vim.cmd.colorscheme("ayu")
+      -- vim.cmd.colorscheme("ayu")
     end,
   },
 }
