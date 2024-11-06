@@ -2,7 +2,12 @@ return {
   "neovim/nvim-lspconfig",
   event = "LazyFile",
   dependencies = {
-    "mason.nvim",
+    {
+      "mason.nvim",
+      opts = {
+        install_root_dir = "/home/alejandro/.mason/",
+      },
+    },
     { "williamboman/mason-lspconfig.nvim", config = function() end },
   },
   opts = function()
@@ -98,7 +103,7 @@ return {
             },
           },
         },
-        tsserver = {},
+        ts_ls = {},
         pyright = {},
         emmet_language_server = {},
         eslint = {},
