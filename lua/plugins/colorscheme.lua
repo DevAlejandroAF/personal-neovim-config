@@ -53,13 +53,13 @@ return {
   --      vim.cmd.colorscheme("ayu")
   --    end,
   --  },
-  --  {
-  --    "rose-pine/neovim",
-  --    name = "rose-pine",
-  --    config = function()
-  --      vim.cmd.colorscheme("rose-pine")
-  --    end,
-  --  },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    config = function()
+      vim.cmd.colorscheme("rose-pine")
+    end,
+  },
   --  {
   --    "folke/tokyonight.nvim",
   --    lazy = false,
@@ -76,11 +76,11 @@ return {
   --      vim.cmd.colorscheme("kanagawa-wave")
   --    end,
   --  },
-  {
-    "olivercederborg/poimandres.nvim",
-    name = "poimandres",
-    config = function()
-      vim.cmd.colorscheme("poimandres")
-    end,
-  },
+  -- {
+  --   "olivercederborg/poimandres.nvim",
+  --   name = "poimandres",
+  --   config = function()
+  --     vim.cmd.colorscheme("poimandres")
+  --   end,
+  -- },
 }
