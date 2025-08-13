@@ -80,12 +80,11 @@ return {
     "olivercederborg/poimandres.nvim",
     name = "poimandres",
     config = function()
-      local p = require("poimandres.palette")
       require("poimandres").setup({
         highlight_groups = {
-          LspReferenceText = { bg = p.background1 },
-          LspReferenceRead = { bg = p.background1 },
-          LspReferenceWrite = { bg = p.background1 },
+          LspReferenceText = { link = "Visual" },
+          LspReferenceRead = { link = "Visual" },
+          LspReferenceWrite = { link = "Visual" },
         },
       })
       vim.cmd.colorscheme("poimandres")
