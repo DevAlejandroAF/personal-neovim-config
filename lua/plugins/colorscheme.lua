@@ -60,15 +60,15 @@ return {
   --     vim.cmd.colorscheme("rose-pine")
   --   end,
   -- },
-  --  {
-  --    "folke/tokyonight.nvim",
-  --    lazy = false,
-  --    priority = 1000,
-  --    opts = {},
-  --    config = function()
-  --      vim.cmd.colorscheme("tokyonight-night")
-  --    end,
-  --  },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+    config = function()
+      vim.cmd.colorscheme("tokyonight-night")
+    end,
+  },
   --  {
   --    "rebelot/kanagawa.nvim",
   --    name = "kanagawa",
@@ -76,18 +76,18 @@ return {
   --      vim.cmd.colorscheme("kanagawa-wave")
   --    end,
   --  },
-  {
-    "olivercederborg/poimandres.nvim",
-    name = "poimandres",
-    config = function()
-      require("poimandres").setup({
-        highlight_groups = {
-          LspReferenceText = { link = "Visual" },
-          LspReferenceRead = { link = "Visual" },
-          LspReferenceWrite = { link = "Visual" },
-        },
-      })
-      vim.cmd.colorscheme("poimandres")
-    end,
-  },
+  -- {
+  --   "olivercederborg/poimandres.nvim",
+  --   name = "poimandres",
+  --   config = function()
+  --     require("poimandres").setup({
+  --       highlight_groups = {
+  --         LspReferenceText = { link = "Visual" },
+  --         LspReferenceRead = { link = "Visual" },
+  --         LspReferenceWrite = { link = "Visual" },
+  --       },
+  --     })
+  --     vim.cmd.colorscheme("poimandres")
+  --   end,
+  -- },
 }
