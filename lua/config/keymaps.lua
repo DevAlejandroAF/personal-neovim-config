@@ -16,6 +16,9 @@ map("n", "<leader>]", "<cmd>BufferLineCycleNext<cr>", { desc = "Next Buffer" })
 -- Mason
 map("n", "<leader>m", "<cmd>Mason<cr>", { desc = "Mason" })
 
+-- Floaterm
+map("n", "<leader>t", "<cmd>FloatermToggle<cr>", { desc = "Floaterm" })
+
 -- Buffer_manager
 -- map("n", "<leader>ba", '<Cmd>lua require("buffer_manager.ui").toggle_quick_menu()<CR>', { desc = "Buffers manager" })
 
