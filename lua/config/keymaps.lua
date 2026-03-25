@@ -19,6 +19,12 @@ map("n", "<leader>m", "<cmd>Mason<cr>", { desc = "Mason" })
 -- Floaterm
 map("n", "<leader>t", "<cmd>FloatermToggle<cr>", { desc = "Floaterm" })
 
+-- Toggle snacks explorer with Ctrl + b
+vim.keymap.del("n", "<C-b>", { silent = true })
+vim.keymap.set("n", "<C-b>", function()
+  Snacks.explorer.open()
+end, { desc = "Toggle Explorer" })
+
 -- Buffer_manager
 -- map("n", "<leader>ba", '<Cmd>lua require("buffer_manager.ui").toggle_quick_menu()<CR>', { desc = "Buffers manager" })
 
